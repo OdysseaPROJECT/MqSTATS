@@ -1,6 +1,6 @@
-## PID-Logger
+## MqStats
 
-(Process ID)-Logger with custom UUID generator for current session. For additional legal information, see the confidential policy. 
+Semi-plugin modification with leader tables (globally). It reads everything player does on a server and gives him points.
 
 ### License
 

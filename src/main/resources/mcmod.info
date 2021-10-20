@@ -1,0 +1,16 @@
+[
+{
+  "modid": "mqstats",
+  "name": "MqStats",
+  "description": "Semi-plugin modification with leader tables (globally). It reads everything player does on a server and gives him points.",
+  "version": "1.0-SNAPSHOT",
+  "mcversion": "[1.12.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Falcion"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
