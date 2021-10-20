@@ -1,7 +1,7 @@
 [
 {
-  "modid": "mqstats",
-  "name": "MqStats",
+  "modid": "mystatistics",
+  "name": "MyStatistics",
   "description": "Semi-plugin modification with leader tables (globally). It reads everything player does on a server and gives him points.",
   "version": "1.0-SNAPSHOT",
   "mcversion": "[1.12.2",

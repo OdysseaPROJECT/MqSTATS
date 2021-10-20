@@ -1,4 +1,4 @@
-## MqStats
+## MyStatistics
 
 Semi-plugin modification with leader tables (globally). It reads everything player does on a server and gives him points.
 
