@@ -3,6 +3,7 @@ package mystatistics.event;
 import mystatistics.MyStatisticMod;
 import mystatistics.gui.GuiScreenTop;
 import net.minecraft.client.gui.GuiButton;
+import net.minecraft.client.gui.GuiIngameMenu;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.resources.I18n;
 import net.minecraftforge.client.event.GuiScreenEvent;
@@ -11,8 +12,6 @@ import net.minecraftforge.fml.common.gameevent.PlayerEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 public class MyStatisticsEventListener {
     @SideOnly(Side.SERVER)
@@ -42,9 +41,13 @@ public class MyStatisticsEventListener {
     @SubscribeEvent
     @SideOnly(Side.CLIENT)
     public void onButtonAction(GuiScreenEvent.ActionPerformedEvent.Post e) {
-        if (e.getGui() instanceof net.minecraft.client.gui.GuiIngameMenu &&
+
+        // CONFIG AND GETTERS OF TABLES ARE NULLABLES.
+        // MUST BE CONNECTED TO DB OR SMTH ELSE
+        // IDK.
+        if (e.getGui() instanceof GuiIngameMenu &&
                 e.getButton().id == 1704 &&
                 MyStatisticMod.config != null)
-            e.getGui().mc.displayGuiScreen((GuiScreen)new GuiScreenTop());
+                e.getGui().mc.displayGuiScreen((GuiScreen)new GuiScreenTop());
     }
 }

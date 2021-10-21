@@ -1,5 +1,6 @@
-
 gui.top.label.searchNotFound=Not Found
 gui.top.label.lastWinners=Last Winners
 gui.top.label.info=Info
-menu.playersTop=Players Top
+gui.top.close=Close
+menu.playersTop=[In-dev]
+gui.top.textField.search=
